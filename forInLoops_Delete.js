@@ -33,6 +33,10 @@
 
 function showValues( obj ) {
   // CODE HERE
+  var str = "";
+  for (var key in obj) {
+    str += obj[key];
+  } return str;
 }
 
 
@@ -42,7 +46,13 @@ function showValues( obj ) {
 // Write a function called greaterThan10 that takes in an object. Write a for in loop that loops over the object and changes any value that is great than 10 to 0. Return the updated object.
 
 // CODE HERE
-
+function greaterThan10(obj) {
+  for (var key in obj) {
+    if (obj[key] > 10) {
+      obj[key] = 0;
+    }
+  } return obj;
+}
 
 
 // ========================
