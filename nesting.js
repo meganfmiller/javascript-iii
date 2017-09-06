@@ -37,7 +37,15 @@ var employees = [{
 //  3. Return the updated employee array.
 
 // Code here
-
+function employeeUpdater() {
+  return employees.filter( function(person) {
+    if (person.firstName === 'Theo') {
+      return delete person;
+    } else if (person.firstName === "Lorie") {
+      return person.department = 'HR';
+    } 
+  }) 
+};
 
 
 
