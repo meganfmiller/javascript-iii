@@ -63,7 +63,11 @@ function employeeUpdater() {
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 // Code here
-
+function removeDuplicates() {
+  return workplaceAccidents.filter( function(id, i) {
+    return workplaceAccidents.indexOf(id) === i;
+  })
+};
 
 
 
